@@ -144,19 +144,19 @@ h1, h2, h3, h4{
 }
 
 h1{
-	font-size: 36px;
+	font-size: 2rem;
 	line-height: 44px;
 
 }
 
 h2{
-	font-size: 24px;
+	font-size: 1.5rem;
 	line-height: 44px;
 
 }
 
 h3{
-	font-size: 21px;
+	font-size: 1rem;
 }
 
 h4{
@@ -322,22 +322,13 @@ Hero
 **/
 
 .hero h2{
-
 	text-align: center;
-
 	padding : 40px;
-	
-	
-	
 	font-weight: 100;
-    
-    font-size: 55px;
+    font-size: 3rem;
 	padding-top: 70px;
 	padding-bottom: 70px;
 	line-height: 66px;
-	
-	
-	
 }
 /**
 ========================================
@@ -348,7 +339,6 @@ About
 
 #about{
 
-	border-top: 70px solid  #009688;
 
 	background-color: #EEEEEE;
 	line-height: 30px;
@@ -415,7 +405,7 @@ coloumns
 }
 
 
-@media only screen and (min-width:950px){
+@media only screen and (min-width:980px){
 	.container,.grid{
 		width: 950px;
 
@@ -618,7 +608,6 @@ Contact
 	color: #EEEEEE;
 	padding-bottom: 60px;
 	font-weight: 400;
-	border-top: 7px solid #EEEEEE;
 
 }
 
@@ -813,6 +802,30 @@ Members
 
 
 #about:focus, #contact:focus{
-
 	outline-width: 0;
+}
+
+
+/* responsive design  */
+@media only screen and (max-width : 980px){
+	body{
+		font-size: 30px;
+	}
+
+	.hero h2{
+		font-size: 60px;
+	}
+
+	#about h3{
+		font-size: 50px;
+	}
+
+	#about p{
+	/*	font-size: 20px;*/
+	}
+
+	.col-1-2, .col-2-2{
+		width: 100%;
+		float: none;
+	}
 }
